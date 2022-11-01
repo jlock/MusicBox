@@ -1,0 +1,924 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		69D50FEE290F519600F6BB6E /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D50FED290F519600F6BB6E /* Tests_iOS.swift */; };
+		69D50FF0290F519600F6BB6E /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D50FEF290F519600F6BB6E /* Tests_iOSLaunchTests.swift */; };
+		69D50FFD290F519600F6BB6E /* Music_BoxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D50FD5290F519400F6BB6E /* Music_BoxApp.swift */; };
+		69D50FFF290F519600F6BB6E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D50FD6290F519400F6BB6E /* ContentView.swift */; };
+		69D51001290F519600F6BB6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69D50FD7290F519600F6BB6E /* Assets.xcassets */; };
+		69D510C6290F5F9B00F6BB6E /* SongPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D510C5290F5F9B00F6BB6E /* SongPlayer.swift */; };
+		69D510C8290F60DF00F6BB6E /* SongManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D510C7290F60DF00F6BB6E /* SongManager.swift */; };
+		69D510CA290F628400F6BB6E /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D510C9290F628400F6BB6E /* Song.swift */; };
+		69D51295290F745500F6BB6E /* SongView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D51294290F745500F6BB6E /* SongView.swift */; };
+		69D5129929104DE700F6BB6E /* SongImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D5129829104DE700F6BB6E /* SongImageView.swift */; };
+		69D5129B29104EAB00F6BB6E /* SongProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D5129A29104EAB00F6BB6E /* SongProgressView.swift */; };
+		69D5129D291090F900F6BB6E /* SongListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D5129C291090F900F6BB6E /* SongListView.swift */; };
+		69D512F029109C2F00F6BB6E /* Jujitsu Kaisen_Kaikai Kitan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D512A029109C2F00F6BB6E /* Jujitsu Kaisen_Kaikai Kitan.mp3 */; };
+		69D512FB29109C2F00F6BB6E /* Demon Slayer_Gurenge.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D512AD29109C2F00F6BB6E /* Demon Slayer_Gurenge.mp3 */; };
+		69D512FC29109C2F00F6BB6E /* Demon Slayer_Zankyou Sanka.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D512AE29109C2F00F6BB6E /* Demon Slayer_Zankyou Sanka.mp3 */; };
+		69D512FD29109C2F00F6BB6E /* Demon Slayer_From the edge.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D512AF29109C2F00F6BB6E /* Demon Slayer_From the edge.mp3 */; };
+		69D512FE29109C2F00F6BB6E /* Demon Slayer_Asa ga Kuru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D512B029109C2F00F6BB6E /* Demon Slayer_Asa ga Kuru.mp3 */; };
+		69D512FF29109C2F00F6BB6E /* JoJo_Jotaros Theme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D512B229109C2F00F6BB6E /* JoJo_Jotaros Theme.mp3 */; };
+		69D5130029109C2F00F6BB6E /* JoJo_STAND PROUD.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D512B329109C2F00F6BB6E /* JoJo_STAND PROUD.mp3 */; };
+		69D5130129109C2F00F6BB6E /* JoJo_Fighting Gold.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D512B429109C2F00F6BB6E /* JoJo_Fighting Gold.mp3 */; };
+		69D5130229109C2F00F6BB6E /* JoJo_Josukes Theme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D512B529109C2F00F6BB6E /* JoJo_Josukes Theme.mp3 */; };
+		69D5131929109C2F00F6BB6E /* Classical_Nocturne op9 No2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D512CF29109C2F00F6BB6E /* Classical_Nocturne op9 No2.mp3 */; };
+		69D5131A29109C2F00F6BB6E /* Classical_Requiem Dies Irae.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D512D029109C2F00F6BB6E /* Classical_Requiem Dies Irae.mp3 */; };
+		69D5131B29109C2F00F6BB6E /* Classical_The Nutcracker Dance of the Sugar Plum Fairies.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D512D129109C2F00F6BB6E /* Classical_The Nutcracker Dance of the Sugar Plum Fairies.mp3 */; };
+		69D5131C29109C2F00F6BB6E /* Classical_Turkish March.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D512D229109C2F00F6BB6E /* Classical_Turkish March.mp3 */; };
+		69D5131D29109C2F00F6BB6E /* Classical_Gymnopedie No1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D512D329109C2F00F6BB6E /* Classical_Gymnopedie No1.mp3 */; };
+		69D5131E29109C2F00F6BB6E /* Classical_Symphony No 9 Ode to Joy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D512D429109C2F00F6BB6E /* Classical_Symphony No 9 Ode to Joy.mp3 */; };
+		69D5131F29109C2F00F6BB6E /* Classical_For Elise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D512D529109C2F00F6BB6E /* Classical_For Elise.mp3 */; };
+		69D5132029109C2F00F6BB6E /* Classical_The Nutcracker March.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D512D629109C2F00F6BB6E /* Classical_The Nutcracker March.mp3 */; };
+		69D5132129109C2F00F6BB6E /* Classical_Piano Sonata No 14 Moonlight Sonata.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D512D729109C2F00F6BB6E /* Classical_Piano Sonata No 14 Moonlight Sonata.mp3 */; };
+		69D5132229109C2F00F6BB6E /* Classical_Clair de lune.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D512D829109C2F00F6BB6E /* Classical_Clair de lune.mp3 */; };
+		69D5132329109C2F00F6BB6E /* Classical_The Four Seasons Winter.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D512D929109C2F00F6BB6E /* Classical_The Four Seasons Winter.mp3 */; };
+		69D5132429109C2F00F6BB6E /* Classical_Canon in D.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D512DA29109C2F00F6BB6E /* Classical_Canon in D.mp3 */; };
+		69D5132529109C2F00F6BB6E /* My Hero_Ashiato Footprints.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D512DC29109C2F00F6BB6E /* My Hero_Ashiato Footprints.mp3 */; };
+		69D5132629109C2F00F6BB6E /* My Hero_Merry-Go-Round.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D512DD29109C2F00F6BB6E /* My Hero_Merry-Go-Round.mp3 */; };
+		69D5132729109C2F00F6BB6E /* Mario_Boosters Tower.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D512DF29109C2F00F6BB6E /* Mario_Boosters Tower.mp3 */; };
+		69D5132829109C2F00F6BB6E /* Mario_Underwater.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D512E029109C2F00F6BB6E /* Mario_Underwater.mp3 */; };
+		69D5132929109C2F00F6BB6E /* Mario_Mario Paint.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D512E129109C2F00F6BB6E /* Mario_Mario Paint.mp3 */; };
+		69D5132A29109C2F00F6BB6E /* Mario_Star Maze Space Zone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D512E229109C2F00F6BB6E /* Mario_Star Maze Space Zone.mp3 */; };
+		69D5132B29109C2F00F6BB6E /* Mario_Luigis Mansion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D512E329109C2F00F6BB6E /* Mario_Luigis Mansion.mp3 */; };
+		69D5132C29109C2F00F6BB6E /* Mario_Beware the Forests Mushrooms.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D512E429109C2F00F6BB6E /* Mario_Beware the Forests Mushrooms.mp3 */; };
+		69D5132D29109C2F00F6BB6E /* Mario_Wario Land.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D512E529109C2F00F6BB6E /* Mario_Wario Land.mp3 */; };
+		69D5132E29109C2F00F6BB6E /* Mario_GangPlank Galleon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D512E629109C2F00F6BB6E /* Mario_GangPlank Galleon.mp3 */; };
+		69D5132F29109C2F00F6BB6E /* Mario_Geno Awakens.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D512E729109C2F00F6BB6E /* Mario_Geno Awakens.mp3 */; };
+		69D5133029109C2F00F6BB6E /* Mario_Dire Dire Docks.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D512E829109C2F00F6BB6E /* Mario_Dire Dire Docks.mp3 */; };
+		69D5133129109C2F00F6BB6E /* Mario_Ground Theme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D512E929109C2F00F6BB6E /* Mario_Ground Theme.mp3 */; };
+		69D5133229109C2F00F6BB6E /* Mario_Fight Against an Armed Boss.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D512EA29109C2F00F6BB6E /* Mario_Fight Against an Armed Boss.mp3 */; };
+		69D5133329109C2F00F6BB6E /* Mario_Castle Fortress.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D512EB29109C2F00F6BB6E /* Mario_Castle Fortress.mp3 */; };
+		69D5133529109C2F00F6BB6E /* Evangelion_A Cruel Angels Thesis.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D512EF29109C2F00F6BB6E /* Evangelion_A Cruel Angels Thesis.mp3 */; };
+		69D5134129109CEF00F6BB6E /* Zelda_Main Theme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D5133729109CEF00F6BB6E /* Zelda_Main Theme.mp3 */; };
+		69D5134229109CEF00F6BB6E /* Zelda_The Dark World.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D5133829109CEF00F6BB6E /* Zelda_The Dark World.mp3 */; };
+		69D5134329109CEF00F6BB6E /* Zelda_Gerudo Valley.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D5133929109CEF00F6BB6E /* Zelda_Gerudo Valley.mp3 */; };
+		69D5134429109CEF00F6BB6E /* Zelda_Ocarina of time.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D5133A29109CEF00F6BB6E /* Zelda_Ocarina of time.mp3 */; };
+		69D5134529109CEF00F6BB6E /* Zelda_Great Fairy Fountain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D5133B29109CEF00F6BB6E /* Zelda_Great Fairy Fountain.mp3 */; };
+		69D5134629109CEF00F6BB6E /* Zelda_Zeldas Lullaby.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D5133C29109CEF00F6BB6E /* Zelda_Zeldas Lullaby.mp3 */; };
+		69D5134729109CEF00F6BB6E /* Zelda_Sarias Song Lost Woods.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D5133D29109CEF00F6BB6E /* Zelda_Sarias Song Lost Woods.mp3 */; };
+		69D5134829109CEF00F6BB6E /* Zelda_Overworld Theme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D5133E29109CEF00F6BB6E /* Zelda_Overworld Theme.mp3 */; };
+		69D5134929109CEF00F6BB6E /* Zelda_Kakariko Village.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D5133F29109CEF00F6BB6E /* Zelda_Kakariko Village.mp3 */; };
+		69D5134A29109CEF00F6BB6E /* Zelda_Song of Storms.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D5134029109CEF00F6BB6E /* Zelda_Song of Storms.mp3 */; };
+		69D5134C2910A00600F6BB6E /* Animal Crossing_Title Theme - New Horizons.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D5134B2910A00600F6BB6E /* Animal Crossing_Title Theme - New Horizons.mp3 */; };
+		69D5135D2910A04E00F6BB6E /* One Piece_Crazy Rainbow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D5134D2910A04E00F6BB6E /* One Piece_Crazy Rainbow.mp3 */; };
+		69D5135E2910A04E00F6BB6E /* One Piece_Binkusu no Sake.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D5134E2910A04E00F6BB6E /* One Piece_Binkusu no Sake.mp3 */; };
+		69D5135F2910A04E00F6BB6E /* One Piece_We Are.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D5134F2910A04E00F6BB6E /* One Piece_We Are.mp3 */; };
+		69D513602910A04E00F6BB6E /* One Piece_The Very Very Very Strongest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D513502910A04E00F6BB6E /* One Piece_The Very Very Very Strongest.mp3 */; };
+		69D513612910A04E00F6BB6E /* One Piece_BRAND NEW WORLD.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D513512910A04E00F6BB6E /* One Piece_BRAND NEW WORLD.mp3 */; };
+		69D513622910A04E00F6BB6E /* One Piece_Next Stage.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D513522910A04E00F6BB6E /* One Piece_Next Stage.mp3 */; };
+		69D513632910A04E00F6BB6E /* One Piece_Namis Theme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D513532910A04E00F6BB6E /* One Piece_Namis Theme.mp3 */; };
+		69D513642910A04E00F6BB6E /* One Piece_Dear Friends.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D513542910A04E00F6BB6E /* One Piece_Dear Friends.mp3 */; };
+		69D513652910A04E00F6BB6E /* One Piece_Kokoro no Chizu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D513552910A04E00F6BB6E /* One Piece_Kokoro no Chizu.mp3 */; };
+		69D513662910A04E00F6BB6E /* One Piece_BON VOYAGE.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D513562910A04E00F6BB6E /* One Piece_BON VOYAGE.mp3 */; };
+		69D513672910A04E00F6BB6E /* One Piece_We Go.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D513572910A04E00F6BB6E /* One Piece_We Go.mp3 */; };
+		69D513682910A04E00F6BB6E /* One Piece_New Genesis.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D513582910A04E00F6BB6E /* One Piece_New Genesis.mp3 */; };
+		69D513692910A04E00F6BB6E /* One Piece_Overtaken.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D513592910A04E00F6BB6E /* One Piece_Overtaken.mp3 */; };
+		69D5136A2910A04E00F6BB6E /* One Piece_We Can.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D5135A2910A04E00F6BB6E /* One Piece_We Can.mp3 */; };
+		69D5136B2910A04E00F6BB6E /* One Piece_Believe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D5135B2910A04E00F6BB6E /* One Piece_Believe.mp3 */; };
+		69D5136C2910A04E00F6BB6E /* One Piece_Wake up.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D5135C2910A04E00F6BB6E /* One Piece_Wake up.mp3 */; };
+		69D513732911843400F6BB6E /* Attack on Titan_Shinzou wo Sasageyo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D5136D2911843400F6BB6E /* Attack on Titan_Shinzou wo Sasageyo.mp3 */; };
+		69D513742911843400F6BB6E /* Attack on Titan_Shoukei to Shikabane no Michi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D5136E2911843400F6BB6E /* Attack on Titan_Shoukei to Shikabane no Michi.mp3 */; };
+		69D513752911843400F6BB6E /* Attack on Titan_Guren no Yumiya.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D5136F2911843400F6BB6E /* Attack on Titan_Guren no Yumiya.mp3 */; };
+		69D513762911843400F6BB6E /* Attack on Titan_Jiyu no Tsubasa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D513702911843400F6BB6E /* Attack on Titan_Jiyu no Tsubasa.mp3 */; };
+		69D513772911843400F6BB6E /* Attack on Titan_My War.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D513712911843400F6BB6E /* Attack on Titan_My War.mp3 */; };
+		69D513782911843400F6BB6E /* Attack on Titan_The Rumbling.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69D513722911843400F6BB6E /* Attack on Titan_The Rumbling.mp3 */; };
+		69D5137D2911855600F6BB6E /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D5137C2911855600F6BB6E /* Album.swift */; };
+		69D513802911858600F6BB6E /* Array_Album+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D5137F2911858600F6BB6E /* Array_Album+Extensions.swift */; };
+		69D5138229118D6F00F6BB6E /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69D5138129118D6F00F6BB6E /* Launch Screen.storyboard */; };
+		69D513842911903300F6BB6E /* one_piece_font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69D513832911903300F6BB6E /* one_piece_font.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		69D50FEA290F519600F6BB6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69D50FD0290F519400F6BB6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69D50FDB290F519600F6BB6E;
+			remoteInfo = "Music Box (iOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		69D50FD5290F519400F6BB6E /* Music_BoxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music_BoxApp.swift; sourceTree = "<group>"; };
+		69D50FD6290F519400F6BB6E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		69D50FD7290F519600F6BB6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		69D50FDC290F519600F6BB6E /* Music Box.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Music Box.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		69D50FE9290F519600F6BB6E /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		69D50FED290F519600F6BB6E /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		69D50FEF290F519600F6BB6E /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
+		69D510C5290F5F9B00F6BB6E /* SongPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongPlayer.swift; sourceTree = "<group>"; };
+		69D510C7290F60DF00F6BB6E /* SongManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongManager.swift; sourceTree = "<group>"; };
+		69D510C9290F628400F6BB6E /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		69D51294290F745500F6BB6E /* SongView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongView.swift; sourceTree = "<group>"; };
+		69D5129829104DE700F6BB6E /* SongImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongImageView.swift; sourceTree = "<group>"; };
+		69D5129A29104EAB00F6BB6E /* SongProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongProgressView.swift; sourceTree = "<group>"; };
+		69D5129C291090F900F6BB6E /* SongListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListView.swift; sourceTree = "<group>"; };
+		69D512A029109C2F00F6BB6E /* Jujitsu Kaisen_Kaikai Kitan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Jujitsu Kaisen_Kaikai Kitan.mp3"; sourceTree = "<group>"; };
+		69D512AD29109C2F00F6BB6E /* Demon Slayer_Gurenge.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Demon Slayer_Gurenge.mp3"; sourceTree = "<group>"; };
+		69D512AE29109C2F00F6BB6E /* Demon Slayer_Zankyou Sanka.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Demon Slayer_Zankyou Sanka.mp3"; sourceTree = "<group>"; };
+		69D512AF29109C2F00F6BB6E /* Demon Slayer_From the edge.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Demon Slayer_From the edge.mp3"; sourceTree = "<group>"; };
+		69D512B029109C2F00F6BB6E /* Demon Slayer_Asa ga Kuru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Demon Slayer_Asa ga Kuru.mp3"; sourceTree = "<group>"; };
+		69D512B229109C2F00F6BB6E /* JoJo_Jotaros Theme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "JoJo_Jotaros Theme.mp3"; sourceTree = "<group>"; };
+		69D512B329109C2F00F6BB6E /* JoJo_STAND PROUD.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "JoJo_STAND PROUD.mp3"; sourceTree = "<group>"; };
+		69D512B429109C2F00F6BB6E /* JoJo_Fighting Gold.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "JoJo_Fighting Gold.mp3"; sourceTree = "<group>"; };
+		69D512B529109C2F00F6BB6E /* JoJo_Josukes Theme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "JoJo_Josukes Theme.mp3"; sourceTree = "<group>"; };
+		69D512CF29109C2F00F6BB6E /* Classical_Nocturne op9 No2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Classical_Nocturne op9 No2.mp3"; sourceTree = "<group>"; };
+		69D512D029109C2F00F6BB6E /* Classical_Requiem Dies Irae.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Classical_Requiem Dies Irae.mp3"; sourceTree = "<group>"; };
+		69D512D129109C2F00F6BB6E /* Classical_The Nutcracker Dance of the Sugar Plum Fairies.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Classical_The Nutcracker Dance of the Sugar Plum Fairies.mp3"; sourceTree = "<group>"; };
+		69D512D229109C2F00F6BB6E /* Classical_Turkish March.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Classical_Turkish March.mp3"; sourceTree = "<group>"; };
+		69D512D329109C2F00F6BB6E /* Classical_Gymnopedie No1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Classical_Gymnopedie No1.mp3"; sourceTree = "<group>"; };
+		69D512D429109C2F00F6BB6E /* Classical_Symphony No 9 Ode to Joy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Classical_Symphony No 9 Ode to Joy.mp3"; sourceTree = "<group>"; };
+		69D512D529109C2F00F6BB6E /* Classical_For Elise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Classical_For Elise.mp3"; sourceTree = "<group>"; };
+		69D512D629109C2F00F6BB6E /* Classical_The Nutcracker March.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Classical_The Nutcracker March.mp3"; sourceTree = "<group>"; };
+		69D512D729109C2F00F6BB6E /* Classical_Piano Sonata No 14 Moonlight Sonata.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Classical_Piano Sonata No 14 Moonlight Sonata.mp3"; sourceTree = "<group>"; };
+		69D512D829109C2F00F6BB6E /* Classical_Clair de lune.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Classical_Clair de lune.mp3"; sourceTree = "<group>"; };
+		69D512D929109C2F00F6BB6E /* Classical_The Four Seasons Winter.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Classical_The Four Seasons Winter.mp3"; sourceTree = "<group>"; };
+		69D512DA29109C2F00F6BB6E /* Classical_Canon in D.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Classical_Canon in D.mp3"; sourceTree = "<group>"; };
+		69D512DC29109C2F00F6BB6E /* My Hero_Ashiato Footprints.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "My Hero_Ashiato Footprints.mp3"; sourceTree = "<group>"; };
+		69D512DD29109C2F00F6BB6E /* My Hero_Merry-Go-Round.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "My Hero_Merry-Go-Round.mp3"; sourceTree = "<group>"; };
+		69D512DF29109C2F00F6BB6E /* Mario_Boosters Tower.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mario_Boosters Tower.mp3"; sourceTree = "<group>"; };
+		69D512E029109C2F00F6BB6E /* Mario_Underwater.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Mario_Underwater.mp3; sourceTree = "<group>"; };
+		69D512E129109C2F00F6BB6E /* Mario_Mario Paint.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mario_Mario Paint.mp3"; sourceTree = "<group>"; };
+		69D512E229109C2F00F6BB6E /* Mario_Star Maze Space Zone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mario_Star Maze Space Zone.mp3"; sourceTree = "<group>"; };
+		69D512E329109C2F00F6BB6E /* Mario_Luigis Mansion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mario_Luigis Mansion.mp3"; sourceTree = "<group>"; };
+		69D512E429109C2F00F6BB6E /* Mario_Beware the Forests Mushrooms.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mario_Beware the Forests Mushrooms.mp3"; sourceTree = "<group>"; };
+		69D512E529109C2F00F6BB6E /* Mario_Wario Land.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mario_Wario Land.mp3"; sourceTree = "<group>"; };
+		69D512E629109C2F00F6BB6E /* Mario_GangPlank Galleon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mario_GangPlank Galleon.mp3"; sourceTree = "<group>"; };
+		69D512E729109C2F00F6BB6E /* Mario_Geno Awakens.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mario_Geno Awakens.mp3"; sourceTree = "<group>"; };
+		69D512E829109C2F00F6BB6E /* Mario_Dire Dire Docks.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mario_Dire Dire Docks.mp3"; sourceTree = "<group>"; };
+		69D512E929109C2F00F6BB6E /* Mario_Ground Theme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mario_Ground Theme.mp3"; sourceTree = "<group>"; };
+		69D512EA29109C2F00F6BB6E /* Mario_Fight Against an Armed Boss.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mario_Fight Against an Armed Boss.mp3"; sourceTree = "<group>"; };
+		69D512EB29109C2F00F6BB6E /* Mario_Castle Fortress.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mario_Castle Fortress.mp3"; sourceTree = "<group>"; };
+		69D512EF29109C2F00F6BB6E /* Evangelion_A Cruel Angels Thesis.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Evangelion_A Cruel Angels Thesis.mp3"; sourceTree = "<group>"; };
+		69D5133729109CEF00F6BB6E /* Zelda_Main Theme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Zelda_Main Theme.mp3"; sourceTree = "<group>"; };
+		69D5133829109CEF00F6BB6E /* Zelda_The Dark World.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Zelda_The Dark World.mp3"; sourceTree = "<group>"; };
+		69D5133929109CEF00F6BB6E /* Zelda_Gerudo Valley.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Zelda_Gerudo Valley.mp3"; sourceTree = "<group>"; };
+		69D5133A29109CEF00F6BB6E /* Zelda_Ocarina of time.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Zelda_Ocarina of time.mp3"; sourceTree = "<group>"; };
+		69D5133B29109CEF00F6BB6E /* Zelda_Great Fairy Fountain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Zelda_Great Fairy Fountain.mp3"; sourceTree = "<group>"; };
+		69D5133C29109CEF00F6BB6E /* Zelda_Zeldas Lullaby.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Zelda_Zeldas Lullaby.mp3"; sourceTree = "<group>"; };
+		69D5133D29109CEF00F6BB6E /* Zelda_Sarias Song Lost Woods.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Zelda_Sarias Song Lost Woods.mp3"; sourceTree = "<group>"; };
+		69D5133E29109CEF00F6BB6E /* Zelda_Overworld Theme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Zelda_Overworld Theme.mp3"; sourceTree = "<group>"; };
+		69D5133F29109CEF00F6BB6E /* Zelda_Kakariko Village.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Zelda_Kakariko Village.mp3"; sourceTree = "<group>"; };
+		69D5134029109CEF00F6BB6E /* Zelda_Song of Storms.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Zelda_Song of Storms.mp3"; sourceTree = "<group>"; };
+		69D5134B2910A00600F6BB6E /* Animal Crossing_Title Theme - New Horizons.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Animal Crossing_Title Theme - New Horizons.mp3"; sourceTree = "<group>"; };
+		69D5134D2910A04E00F6BB6E /* One Piece_Crazy Rainbow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "One Piece_Crazy Rainbow.mp3"; sourceTree = "<group>"; };
+		69D5134E2910A04E00F6BB6E /* One Piece_Binkusu no Sake.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "One Piece_Binkusu no Sake.mp3"; sourceTree = "<group>"; };
+		69D5134F2910A04E00F6BB6E /* One Piece_We Are.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "One Piece_We Are.mp3"; sourceTree = "<group>"; };
+		69D513502910A04E00F6BB6E /* One Piece_The Very Very Very Strongest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "One Piece_The Very Very Very Strongest.mp3"; sourceTree = "<group>"; };
+		69D513512910A04E00F6BB6E /* One Piece_BRAND NEW WORLD.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "One Piece_BRAND NEW WORLD.mp3"; sourceTree = "<group>"; };
+		69D513522910A04E00F6BB6E /* One Piece_Next Stage.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "One Piece_Next Stage.mp3"; sourceTree = "<group>"; };
+		69D513532910A04E00F6BB6E /* One Piece_Namis Theme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "One Piece_Namis Theme.mp3"; sourceTree = "<group>"; };
+		69D513542910A04E00F6BB6E /* One Piece_Dear Friends.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "One Piece_Dear Friends.mp3"; sourceTree = "<group>"; };
+		69D513552910A04E00F6BB6E /* One Piece_Kokoro no Chizu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "One Piece_Kokoro no Chizu.mp3"; sourceTree = "<group>"; };
+		69D513562910A04E00F6BB6E /* One Piece_BON VOYAGE.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "One Piece_BON VOYAGE.mp3"; sourceTree = "<group>"; };
+		69D513572910A04E00F6BB6E /* One Piece_We Go.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "One Piece_We Go.mp3"; sourceTree = "<group>"; };
+		69D513582910A04E00F6BB6E /* One Piece_New Genesis.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "One Piece_New Genesis.mp3"; sourceTree = "<group>"; };
+		69D513592910A04E00F6BB6E /* One Piece_Overtaken.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "One Piece_Overtaken.mp3"; sourceTree = "<group>"; };
+		69D5135A2910A04E00F6BB6E /* One Piece_We Can.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "One Piece_We Can.mp3"; sourceTree = "<group>"; };
+		69D5135B2910A04E00F6BB6E /* One Piece_Believe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "One Piece_Believe.mp3"; sourceTree = "<group>"; };
+		69D5135C2910A04E00F6BB6E /* One Piece_Wake up.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "One Piece_Wake up.mp3"; sourceTree = "<group>"; };
+		69D5136D2911843400F6BB6E /* Attack on Titan_Shinzou wo Sasageyo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Attack on Titan_Shinzou wo Sasageyo.mp3"; sourceTree = "<group>"; };
+		69D5136E2911843400F6BB6E /* Attack on Titan_Shoukei to Shikabane no Michi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Attack on Titan_Shoukei to Shikabane no Michi.mp3"; sourceTree = "<group>"; };
+		69D5136F2911843400F6BB6E /* Attack on Titan_Guren no Yumiya.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Attack on Titan_Guren no Yumiya.mp3"; sourceTree = "<group>"; };
+		69D513702911843400F6BB6E /* Attack on Titan_Jiyu no Tsubasa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Attack on Titan_Jiyu no Tsubasa.mp3"; sourceTree = "<group>"; };
+		69D513712911843400F6BB6E /* Attack on Titan_My War.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Attack on Titan_My War.mp3"; sourceTree = "<group>"; };
+		69D513722911843400F6BB6E /* Attack on Titan_The Rumbling.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Attack on Titan_The Rumbling.mp3"; sourceTree = "<group>"; };
+		69D5137C2911855600F6BB6E /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		69D5137F2911858600F6BB6E /* Array_Album+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array_Album+Extensions.swift"; sourceTree = "<group>"; };
+		69D5138129118D6F00F6BB6E /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		69D513832911903300F6BB6E /* one_piece_font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = one_piece_font.ttf; sourceTree = "<group>"; };
+		69D51386291191A500F6BB6E /* Music-Box-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Music-Box-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69D50FD9290F519600F6BB6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69D50FE6290F519600F6BB6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		69D50FCF290F519400F6BB6E = {
+			isa = PBXGroup;
+			children = (
+				69D51386291191A500F6BB6E /* Music-Box-Info.plist */,
+				69D5129E29109C2F00F6BB6E /* Songs */,
+				69D50FD4290F519400F6BB6E /* Source */,
+				69D50FEC290F519600F6BB6E /* Tests */,
+				69D50FDD290F519600F6BB6E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		69D50FD4290F519400F6BB6E /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				69D50FD5290F519400F6BB6E /* Music_BoxApp.swift */,
+				69D513792911847E00F6BB6E /* Views */,
+				69D5137A291184E200F6BB6E /* Models */,
+				69D5137B291184F400F6BB6E /* Utilities */,
+				69D5137E2911856300F6BB6E /* Extensions */,
+				69D513852911903900F6BB6E /* Resources */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		69D50FDD290F519600F6BB6E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69D50FDC290F519600F6BB6E /* Music Box.app */,
+				69D50FE9290F519600F6BB6E /* Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69D50FEC290F519600F6BB6E /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				69D50FED290F519600F6BB6E /* Tests_iOS.swift */,
+				69D50FEF290F519600F6BB6E /* Tests_iOSLaunchTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		69D5129E29109C2F00F6BB6E /* Songs */ = {
+			isa = PBXGroup;
+			children = (
+				69D5133629109CEF00F6BB6E /* Zelda */,
+				69D5129F29109C2F00F6BB6E /* Jujitsu Kaisen */,
+				69D512AC29109C2F00F6BB6E /* Demon slayer */,
+				69D512B129109C2F00F6BB6E /* JoJo */,
+				69D512B629109C2F00F6BB6E /* Attack on titan */,
+				69D512BD29109C2F00F6BB6E /* One piece */,
+				69D512CE29109C2F00F6BB6E /* Classical */,
+				69D512DB29109C2F00F6BB6E /* My Hero Acadamia */,
+				69D512DE29109C2F00F6BB6E /* Mario */,
+				69D512EC29109C2F00F6BB6E /* Animal crossing */,
+				69D512EE29109C2F00F6BB6E /* Evangelion */,
+			);
+			path = Songs;
+			sourceTree = "<group>";
+		};
+		69D5129F29109C2F00F6BB6E /* Jujitsu Kaisen */ = {
+			isa = PBXGroup;
+			children = (
+				69D512A029109C2F00F6BB6E /* Jujitsu Kaisen_Kaikai Kitan.mp3 */,
+			);
+			path = "Jujitsu Kaisen";
+			sourceTree = "<group>";
+		};
+		69D512AC29109C2F00F6BB6E /* Demon slayer */ = {
+			isa = PBXGroup;
+			children = (
+				69D512AD29109C2F00F6BB6E /* Demon Slayer_Gurenge.mp3 */,
+				69D512AE29109C2F00F6BB6E /* Demon Slayer_Zankyou Sanka.mp3 */,
+				69D512AF29109C2F00F6BB6E /* Demon Slayer_From the edge.mp3 */,
+				69D512B029109C2F00F6BB6E /* Demon Slayer_Asa ga Kuru.mp3 */,
+			);
+			path = "Demon slayer";
+			sourceTree = "<group>";
+		};
+		69D512B129109C2F00F6BB6E /* JoJo */ = {
+			isa = PBXGroup;
+			children = (
+				69D512B229109C2F00F6BB6E /* JoJo_Jotaros Theme.mp3 */,
+				69D512B329109C2F00F6BB6E /* JoJo_STAND PROUD.mp3 */,
+				69D512B429109C2F00F6BB6E /* JoJo_Fighting Gold.mp3 */,
+				69D512B529109C2F00F6BB6E /* JoJo_Josukes Theme.mp3 */,
+			);
+			path = JoJo;
+			sourceTree = "<group>";
+		};
+		69D512B629109C2F00F6BB6E /* Attack on titan */ = {
+			isa = PBXGroup;
+			children = (
+				69D5136F2911843400F6BB6E /* Attack on Titan_Guren no Yumiya.mp3 */,
+				69D513702911843400F6BB6E /* Attack on Titan_Jiyu no Tsubasa.mp3 */,
+				69D513712911843400F6BB6E /* Attack on Titan_My War.mp3 */,
+				69D5136D2911843400F6BB6E /* Attack on Titan_Shinzou wo Sasageyo.mp3 */,
+				69D5136E2911843400F6BB6E /* Attack on Titan_Shoukei to Shikabane no Michi.mp3 */,
+				69D513722911843400F6BB6E /* Attack on Titan_The Rumbling.mp3 */,
+			);
+			path = "Attack on titan";
+			sourceTree = "<group>";
+		};
+		69D512BD29109C2F00F6BB6E /* One piece */ = {
+			isa = PBXGroup;
+			children = (
+				69D5135B2910A04E00F6BB6E /* One Piece_Believe.mp3 */,
+				69D5134E2910A04E00F6BB6E /* One Piece_Binkusu no Sake.mp3 */,
+				69D513562910A04E00F6BB6E /* One Piece_BON VOYAGE.mp3 */,
+				69D513512910A04E00F6BB6E /* One Piece_BRAND NEW WORLD.mp3 */,
+				69D5134D2910A04E00F6BB6E /* One Piece_Crazy Rainbow.mp3 */,
+				69D513542910A04E00F6BB6E /* One Piece_Dear Friends.mp3 */,
+				69D513552910A04E00F6BB6E /* One Piece_Kokoro no Chizu.mp3 */,
+				69D513532910A04E00F6BB6E /* One Piece_Namis Theme.mp3 */,
+				69D513582910A04E00F6BB6E /* One Piece_New Genesis.mp3 */,
+				69D513522910A04E00F6BB6E /* One Piece_Next Stage.mp3 */,
+				69D513592910A04E00F6BB6E /* One Piece_Overtaken.mp3 */,
+				69D513502910A04E00F6BB6E /* One Piece_The Very Very Very Strongest.mp3 */,
+				69D5135C2910A04E00F6BB6E /* One Piece_Wake up.mp3 */,
+				69D5134F2910A04E00F6BB6E /* One Piece_We Are.mp3 */,
+				69D5135A2910A04E00F6BB6E /* One Piece_We Can.mp3 */,
+				69D513572910A04E00F6BB6E /* One Piece_We Go.mp3 */,
+			);
+			path = "One piece";
+			sourceTree = "<group>";
+		};
+		69D512CE29109C2F00F6BB6E /* Classical */ = {
+			isa = PBXGroup;
+			children = (
+				69D512CF29109C2F00F6BB6E /* Classical_Nocturne op9 No2.mp3 */,
+				69D512D029109C2F00F6BB6E /* Classical_Requiem Dies Irae.mp3 */,
+				69D512D129109C2F00F6BB6E /* Classical_The Nutcracker Dance of the Sugar Plum Fairies.mp3 */,
+				69D512D229109C2F00F6BB6E /* Classical_Turkish March.mp3 */,
+				69D512D329109C2F00F6BB6E /* Classical_Gymnopedie No1.mp3 */,
+				69D512D429109C2F00F6BB6E /* Classical_Symphony No 9 Ode to Joy.mp3 */,
+				69D512D529109C2F00F6BB6E /* Classical_For Elise.mp3 */,
+				69D512D629109C2F00F6BB6E /* Classical_The Nutcracker March.mp3 */,
+				69D512D729109C2F00F6BB6E /* Classical_Piano Sonata No 14 Moonlight Sonata.mp3 */,
+				69D512D829109C2F00F6BB6E /* Classical_Clair de lune.mp3 */,
+				69D512D929109C2F00F6BB6E /* Classical_The Four Seasons Winter.mp3 */,
+				69D512DA29109C2F00F6BB6E /* Classical_Canon in D.mp3 */,
+			);
+			path = Classical;
+			sourceTree = "<group>";
+		};
+		69D512DB29109C2F00F6BB6E /* My Hero Acadamia */ = {
+			isa = PBXGroup;
+			children = (
+				69D512DC29109C2F00F6BB6E /* My Hero_Ashiato Footprints.mp3 */,
+				69D512DD29109C2F00F6BB6E /* My Hero_Merry-Go-Round.mp3 */,
+			);
+			path = "My Hero Acadamia";
+			sourceTree = "<group>";
+		};
+		69D512DE29109C2F00F6BB6E /* Mario */ = {
+			isa = PBXGroup;
+			children = (
+				69D512DF29109C2F00F6BB6E /* Mario_Boosters Tower.mp3 */,
+				69D512E029109C2F00F6BB6E /* Mario_Underwater.mp3 */,
+				69D512E129109C2F00F6BB6E /* Mario_Mario Paint.mp3 */,
+				69D512E229109C2F00F6BB6E /* Mario_Star Maze Space Zone.mp3 */,
+				69D512E329109C2F00F6BB6E /* Mario_Luigis Mansion.mp3 */,
+				69D512E429109C2F00F6BB6E /* Mario_Beware the Forests Mushrooms.mp3 */,
+				69D512E529109C2F00F6BB6E /* Mario_Wario Land.mp3 */,
+				69D512E629109C2F00F6BB6E /* Mario_GangPlank Galleon.mp3 */,
+				69D512E729109C2F00F6BB6E /* Mario_Geno Awakens.mp3 */,
+				69D512E829109C2F00F6BB6E /* Mario_Dire Dire Docks.mp3 */,
+				69D512E929109C2F00F6BB6E /* Mario_Ground Theme.mp3 */,
+				69D512EA29109C2F00F6BB6E /* Mario_Fight Against an Armed Boss.mp3 */,
+				69D512EB29109C2F00F6BB6E /* Mario_Castle Fortress.mp3 */,
+			);
+			path = Mario;
+			sourceTree = "<group>";
+		};
+		69D512EC29109C2F00F6BB6E /* Animal crossing */ = {
+			isa = PBXGroup;
+			children = (
+				69D5134B2910A00600F6BB6E /* Animal Crossing_Title Theme - New Horizons.mp3 */,
+			);
+			path = "Animal crossing";
+			sourceTree = "<group>";
+		};
+		69D512EE29109C2F00F6BB6E /* Evangelion */ = {
+			isa = PBXGroup;
+			children = (
+				69D512EF29109C2F00F6BB6E /* Evangelion_A Cruel Angels Thesis.mp3 */,
+			);
+			path = Evangelion;
+			sourceTree = "<group>";
+		};
+		69D5133629109CEF00F6BB6E /* Zelda */ = {
+			isa = PBXGroup;
+			children = (
+				69D5133729109CEF00F6BB6E /* Zelda_Main Theme.mp3 */,
+				69D5133829109CEF00F6BB6E /* Zelda_The Dark World.mp3 */,
+				69D5133929109CEF00F6BB6E /* Zelda_Gerudo Valley.mp3 */,
+				69D5133A29109CEF00F6BB6E /* Zelda_Ocarina of time.mp3 */,
+				69D5133B29109CEF00F6BB6E /* Zelda_Great Fairy Fountain.mp3 */,
+				69D5133C29109CEF00F6BB6E /* Zelda_Zeldas Lullaby.mp3 */,
+				69D5133D29109CEF00F6BB6E /* Zelda_Sarias Song Lost Woods.mp3 */,
+				69D5133E29109CEF00F6BB6E /* Zelda_Overworld Theme.mp3 */,
+				69D5133F29109CEF00F6BB6E /* Zelda_Kakariko Village.mp3 */,
+				69D5134029109CEF00F6BB6E /* Zelda_Song of Storms.mp3 */,
+			);
+			path = Zelda;
+			sourceTree = "<group>";
+		};
+		69D513792911847E00F6BB6E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				69D50FD6290F519400F6BB6E /* ContentView.swift */,
+				69D51294290F745500F6BB6E /* SongView.swift */,
+				69D5129829104DE700F6BB6E /* SongImageView.swift */,
+				69D5129A29104EAB00F6BB6E /* SongProgressView.swift */,
+				69D5129C291090F900F6BB6E /* SongListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		69D5137A291184E200F6BB6E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				69D510C9290F628400F6BB6E /* Song.swift */,
+				69D5137C2911855600F6BB6E /* Album.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		69D5137B291184F400F6BB6E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				69D510C5290F5F9B00F6BB6E /* SongPlayer.swift */,
+				69D510C7290F60DF00F6BB6E /* SongManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		69D5137E2911856300F6BB6E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				69D5137F2911858600F6BB6E /* Array_Album+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		69D513852911903900F6BB6E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				69D50FD7290F519600F6BB6E /* Assets.xcassets */,
+				69D5138129118D6F00F6BB6E /* Launch Screen.storyboard */,
+				69D513832911903300F6BB6E /* one_piece_font.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69D50FDB290F519600F6BB6E /* Music Box */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69D51005290F519600F6BB6E /* Build configuration list for PBXNativeTarget "Music Box" */;
+			buildPhases = (
+				69D50FD8290F519600F6BB6E /* Sources */,
+				69D50FD9290F519600F6BB6E /* Frameworks */,
+				69D50FDA290F519600F6BB6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Music Box";
+			productName = "Music Box (iOS)";
+			productReference = 69D50FDC290F519600F6BB6E /* Music Box.app */;
+			productType = "com.apple.product-type.application";
+		};
+		69D50FE8290F519600F6BB6E /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69D5100B290F519600F6BB6E /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				69D50FE5290F519600F6BB6E /* Sources */,
+				69D50FE6290F519600F6BB6E /* Frameworks */,
+				69D50FE7290F519600F6BB6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69D50FEB290F519600F6BB6E /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = "Tests iOS";
+			productReference = 69D50FE9290F519600F6BB6E /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		69D50FD0290F519400F6BB6E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					69D50FDB290F519600F6BB6E = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					69D50FE8290F519600F6BB6E = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 69D50FDB290F519600F6BB6E;
+					};
+				};
+			};
+			buildConfigurationList = 69D50FD3290F519400F6BB6E /* Build configuration list for PBXProject "Music Box" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 69D50FCF290F519400F6BB6E;
+			productRefGroup = 69D50FDD290F519600F6BB6E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69D50FDB290F519600F6BB6E /* Music Box */,
+				69D50FE8290F519600F6BB6E /* Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		69D50FDA290F519600F6BB6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69D5132629109C2F00F6BB6E /* My Hero_Merry-Go-Round.mp3 in Resources */,
+				69D513752911843400F6BB6E /* Attack on Titan_Guren no Yumiya.mp3 in Resources */,
+				69D513782911843400F6BB6E /* Attack on Titan_The Rumbling.mp3 in Resources */,
+				69D5132929109C2F00F6BB6E /* Mario_Mario Paint.mp3 in Resources */,
+				69D5134829109CEF00F6BB6E /* Zelda_Overworld Theme.mp3 in Resources */,
+				69D5131B29109C2F00F6BB6E /* Classical_The Nutcracker Dance of the Sugar Plum Fairies.mp3 in Resources */,
+				69D513622910A04E00F6BB6E /* One Piece_Next Stage.mp3 in Resources */,
+				69D5132B29109C2F00F6BB6E /* Mario_Luigis Mansion.mp3 in Resources */,
+				69D5132E29109C2F00F6BB6E /* Mario_GangPlank Galleon.mp3 in Resources */,
+				69D512FF29109C2F00F6BB6E /* JoJo_Jotaros Theme.mp3 in Resources */,
+				69D5131D29109C2F00F6BB6E /* Classical_Gymnopedie No1.mp3 in Resources */,
+				69D5130129109C2F00F6BB6E /* JoJo_Fighting Gold.mp3 in Resources */,
+				69D512FC29109C2F00F6BB6E /* Demon Slayer_Zankyou Sanka.mp3 in Resources */,
+				69D5134929109CEF00F6BB6E /* Zelda_Kakariko Village.mp3 in Resources */,
+				69D5132529109C2F00F6BB6E /* My Hero_Ashiato Footprints.mp3 in Resources */,
+				69D5130229109C2F00F6BB6E /* JoJo_Josukes Theme.mp3 in Resources */,
+				69D513842911903300F6BB6E /* one_piece_font.ttf in Resources */,
+				69D513602910A04E00F6BB6E /* One Piece_The Very Very Very Strongest.mp3 in Resources */,
+				69D513732911843400F6BB6E /* Attack on Titan_Shinzou wo Sasageyo.mp3 in Resources */,
+				69D5133129109C2F00F6BB6E /* Mario_Ground Theme.mp3 in Resources */,
+				69D5132029109C2F00F6BB6E /* Classical_The Nutcracker March.mp3 in Resources */,
+				69D5132729109C2F00F6BB6E /* Mario_Boosters Tower.mp3 in Resources */,
+				69D5134329109CEF00F6BB6E /* Zelda_Gerudo Valley.mp3 in Resources */,
+				69D5135F2910A04E00F6BB6E /* One Piece_We Are.mp3 in Resources */,
+				69D5136B2910A04E00F6BB6E /* One Piece_Believe.mp3 in Resources */,
+				69D5134429109CEF00F6BB6E /* Zelda_Ocarina of time.mp3 in Resources */,
+				69D51001290F519600F6BB6E /* Assets.xcassets in Resources */,
+				69D5132429109C2F00F6BB6E /* Classical_Canon in D.mp3 in Resources */,
+				69D5136C2910A04E00F6BB6E /* One Piece_Wake up.mp3 in Resources */,
+				69D512FD29109C2F00F6BB6E /* Demon Slayer_From the edge.mp3 in Resources */,
+				69D513672910A04E00F6BB6E /* One Piece_We Go.mp3 in Resources */,
+				69D5133529109C2F00F6BB6E /* Evangelion_A Cruel Angels Thesis.mp3 in Resources */,
+				69D5135E2910A04E00F6BB6E /* One Piece_Binkusu no Sake.mp3 in Resources */,
+				69D5134629109CEF00F6BB6E /* Zelda_Zeldas Lullaby.mp3 in Resources */,
+				69D5134729109CEF00F6BB6E /* Zelda_Sarias Song Lost Woods.mp3 in Resources */,
+				69D5131A29109C2F00F6BB6E /* Classical_Requiem Dies Irae.mp3 in Resources */,
+				69D5130029109C2F00F6BB6E /* JoJo_STAND PROUD.mp3 in Resources */,
+				69D5132229109C2F00F6BB6E /* Classical_Clair de lune.mp3 in Resources */,
+				69D513772911843400F6BB6E /* Attack on Titan_My War.mp3 in Resources */,
+				69D5132129109C2F00F6BB6E /* Classical_Piano Sonata No 14 Moonlight Sonata.mp3 in Resources */,
+				69D5131F29109C2F00F6BB6E /* Classical_For Elise.mp3 in Resources */,
+				69D5131C29109C2F00F6BB6E /* Classical_Turkish March.mp3 in Resources */,
+				69D5132329109C2F00F6BB6E /* Classical_The Four Seasons Winter.mp3 in Resources */,
+				69D513692910A04E00F6BB6E /* One Piece_Overtaken.mp3 in Resources */,
+				69D5133029109C2F00F6BB6E /* Mario_Dire Dire Docks.mp3 in Resources */,
+				69D513662910A04E00F6BB6E /* One Piece_BON VOYAGE.mp3 in Resources */,
+				69D5134C2910A00600F6BB6E /* Animal Crossing_Title Theme - New Horizons.mp3 in Resources */,
+				69D513612910A04E00F6BB6E /* One Piece_BRAND NEW WORLD.mp3 in Resources */,
+				69D5133329109C2F00F6BB6E /* Mario_Castle Fortress.mp3 in Resources */,
+				69D5134229109CEF00F6BB6E /* Zelda_The Dark World.mp3 in Resources */,
+				69D5134529109CEF00F6BB6E /* Zelda_Great Fairy Fountain.mp3 in Resources */,
+				69D5132F29109C2F00F6BB6E /* Mario_Geno Awakens.mp3 in Resources */,
+				69D512FB29109C2F00F6BB6E /* Demon Slayer_Gurenge.mp3 in Resources */,
+				69D5134A29109CEF00F6BB6E /* Zelda_Song of Storms.mp3 in Resources */,
+				69D5132C29109C2F00F6BB6E /* Mario_Beware the Forests Mushrooms.mp3 in Resources */,
+				69D5132A29109C2F00F6BB6E /* Mario_Star Maze Space Zone.mp3 in Resources */,
+				69D5136A2910A04E00F6BB6E /* One Piece_We Can.mp3 in Resources */,
+				69D513632910A04E00F6BB6E /* One Piece_Namis Theme.mp3 in Resources */,
+				69D513642910A04E00F6BB6E /* One Piece_Dear Friends.mp3 in Resources */,
+				69D5132829109C2F00F6BB6E /* Mario_Underwater.mp3 in Resources */,
+				69D513652910A04E00F6BB6E /* One Piece_Kokoro no Chizu.mp3 in Resources */,
+				69D512F029109C2F00F6BB6E /* Jujitsu Kaisen_Kaikai Kitan.mp3 in Resources */,
+				69D513682910A04E00F6BB6E /* One Piece_New Genesis.mp3 in Resources */,
+				69D513742911843400F6BB6E /* Attack on Titan_Shoukei to Shikabane no Michi.mp3 in Resources */,
+				69D5134129109CEF00F6BB6E /* Zelda_Main Theme.mp3 in Resources */,
+				69D5133229109C2F00F6BB6E /* Mario_Fight Against an Armed Boss.mp3 in Resources */,
+				69D5135D2910A04E00F6BB6E /* One Piece_Crazy Rainbow.mp3 in Resources */,
+				69D5138229118D6F00F6BB6E /* Launch Screen.storyboard in Resources */,
+				69D513762911843400F6BB6E /* Attack on Titan_Jiyu no Tsubasa.mp3 in Resources */,
+				69D5131E29109C2F00F6BB6E /* Classical_Symphony No 9 Ode to Joy.mp3 in Resources */,
+				69D512FE29109C2F00F6BB6E /* Demon Slayer_Asa ga Kuru.mp3 in Resources */,
+				69D5132D29109C2F00F6BB6E /* Mario_Wario Land.mp3 in Resources */,
+				69D5131929109C2F00F6BB6E /* Classical_Nocturne op9 No2.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69D50FE7290F519600F6BB6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69D50FD8290F519600F6BB6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69D513802911858600F6BB6E /* Array_Album+Extensions.swift in Sources */,
+				69D510C6290F5F9B00F6BB6E /* SongPlayer.swift in Sources */,
+				69D5129B29104EAB00F6BB6E /* SongProgressView.swift in Sources */,
+				69D50FFF290F519600F6BB6E /* ContentView.swift in Sources */,
+				69D5129D291090F900F6BB6E /* SongListView.swift in Sources */,
+				69D510C8290F60DF00F6BB6E /* SongManager.swift in Sources */,
+				69D51295290F745500F6BB6E /* SongView.swift in Sources */,
+				69D50FFD290F519600F6BB6E /* Music_BoxApp.swift in Sources */,
+				69D5129929104DE700F6BB6E /* SongImageView.swift in Sources */,
+				69D510CA290F628400F6BB6E /* Song.swift in Sources */,
+				69D5137D2911855600F6BB6E /* Album.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69D50FE5290F519600F6BB6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69D50FF0290F519600F6BB6E /* Tests_iOSLaunchTests.swift in Sources */,
+				69D50FEE290F519600F6BB6E /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		69D50FEB290F519600F6BB6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69D50FDB290F519600F6BB6E /* Music Box */;
+			targetProxy = 69D50FEA290F519600F6BB6E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		69D51003290F519600F6BB6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		69D51004290F519600F6BB6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		69D51006290F519600F6BB6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Music-Box-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bluescale.Music-Box";
+				PRODUCT_NAME = "Music Box";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		69D51007290F519600F6BB6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Music-Box-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bluescale.Music-Box";
+				PRODUCT_NAME = "Music Box";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		69D5100C290F519600F6BB6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bluescale.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Music Box (iOS)";
+			};
+			name = Debug;
+		};
+		69D5100D290F519600F6BB6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bluescale.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Music Box (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69D50FD3290F519400F6BB6E /* Build configuration list for PBXProject "Music Box" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69D51003290F519600F6BB6E /* Debug */,
+				69D51004290F519600F6BB6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69D51005290F519600F6BB6E /* Build configuration list for PBXNativeTarget "Music Box" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69D51006290F519600F6BB6E /* Debug */,
+				69D51007290F519600F6BB6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69D5100B290F519600F6BB6E /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69D5100C290F519600F6BB6E /* Debug */,
+				69D5100D290F519600F6BB6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 69D50FD0290F519400F6BB6E /* Project object */;
+}
