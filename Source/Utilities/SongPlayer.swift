@@ -14,7 +14,13 @@ class SongPlayer: NSObject, ObservableObject, AVAudioPlayerDelegate {
     private var link: CADisplayLink!
     
     @Published var songProgress = 0.0
-    var nowPlaying: Song? = nil
+    
+    var nowPlaying: Song? = nil {
+        didSet {
+            setupNowPlaying()
+        }
+    }
+    
     var albums: [Album] = []
         
     override init() {
@@ -28,7 +34,9 @@ class SongPlayer: NSObject, ObservableObject, AVAudioPlayerDelegate {
             try AVAudioSession.sharedInstance().setActive(true)
         } catch {
             print(error)
-        }        
+        }
+        
+        setupRemoteTransportControls()
     }
     
     deinit {
@@ -91,5 +99,59 @@ class SongPlayer: NSObject, ObservableObject, AVAudioPlayerDelegate {
         guard let nowPlaying = nowPlaying else { return nil }
         
         return albums.next(after: nowPlaying)
+    }
+    
+    private func previousSong() -> Song? {
+        guard let nowPlaying = nowPlaying else { return nil }
+        
+        return albums.previous(to: nowPlaying)
+    }
+
+    
+    // MARK - MediaPlayer
+    
+    func setupRemoteTransportControls() {
+        let commandCenter = MPRemoteCommandCenter.shared()
+
+        commandCenter.pauseCommand.addTarget { [unowned self] event in
+            player?.pause()
+            return .success
+        }
+        
+        commandCenter.playCommand.addTarget { [unowned self] event in
+            player?.play()
+            return .success
+        }
+        
+        commandCenter.stopCommand.addTarget { [unowned self] event in
+            player?.stop()
+            return .success
+        }
+        
+        commandCenter.nextTrackCommand.addTarget { [unowned self] event in
+            if let nextSong = nextSong() {
+                play(nextSong)
+            }
+            
+            return .success
+        }
+        
+        commandCenter.previousTrackCommand.addTarget { [unowned self] event in
+            if let previousSong = previousSong() {
+                play(previousSong)
+            }
+            
+            return .success
+        }
+    }
+    
+    func setupNowPlaying() {
+        var nowPlayingInfo = [String : Any]()
+        nowPlayingInfo[MPMediaItemPropertyTitle] = nowPlaying?.title
+        nowPlayingInfo[MPNowPlayingInfoPropertyElapsedPlaybackTime] = player?.currentTime
+        nowPlayingInfo[MPMediaItemPropertyPlaybackDuration] = player?.duration
+        nowPlayingInfo[MPNowPlayingInfoPropertyPlaybackRate] = player?.rate
+
+        MPNowPlayingInfoCenter.default().nowPlayingInfo = nowPlayingInfo
     }
 }
