@@ -27,6 +27,7 @@ struct ContentView: View {
     private func load() {
         manager.fetch { albums in
             self.albums = albums
+            self.player.albums = albums
         }
     }
 }

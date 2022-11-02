@@ -31,4 +31,28 @@ extension Array where Element == Album {
         // We finished all songs
         return nil
     }
+    
+    func previous(to song: Song) -> Song? {
+        guard let albumIndex = firstIndex(where: { $0.artist == song.artist }) else { return nil }
+        
+        let album = self[albumIndex]
+        
+        // Previous song in album
+        if let songIndex = album.songs.firstIndex(of: song) {
+           let previousSongIndex = album.songs.index(before: songIndex)
+            
+            if previousSongIndex > 0 {
+                return album.songs[previousSongIndex]
+            }
+        }
+        
+        // Last song in previous album
+        let previousAlbumIndex = index(before: albumIndex)
+        if previousAlbumIndex > 0 {
+            return self[previousAlbumIndex].songs.last
+        }
+        
+        // We are at the start
+        return self.first?.songs.first
+    }
 }

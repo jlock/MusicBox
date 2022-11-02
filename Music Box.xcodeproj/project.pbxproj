@@ -92,7 +92,6 @@
 		69D5137D2911855600F6BB6E /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D5137C2911855600F6BB6E /* Album.swift */; };
 		69D513802911858600F6BB6E /* Array_Album+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D5137F2911858600F6BB6E /* Array_Album+Extensions.swift */; };
 		69D5138229118D6F00F6BB6E /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69D5138129118D6F00F6BB6E /* Launch Screen.storyboard */; };
-		69D513842911903300F6BB6E /* one_piece_font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69D513832911903300F6BB6E /* one_piece_font.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -193,7 +192,6 @@
 		69D5137C2911855600F6BB6E /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		69D5137F2911858600F6BB6E /* Array_Album+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array_Album+Extensions.swift"; sourceTree = "<group>"; };
 		69D5138129118D6F00F6BB6E /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		69D513832911903300F6BB6E /* one_piece_font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = one_piece_font.ttf; sourceTree = "<group>"; };
 		69D51386291191A500F6BB6E /* Music-Box-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Music-Box-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -465,7 +463,6 @@
 			children = (
 				69D50FD7290F519600F6BB6E /* Assets.xcassets */,
 				69D5138129118D6F00F6BB6E /* Launch Screen.storyboard */,
-				69D513832911903300F6BB6E /* one_piece_font.ttf */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -567,7 +564,6 @@
 				69D5134929109CEF00F6BB6E /* Zelda_Kakariko Village.mp3 in Resources */,
 				69D5132529109C2F00F6BB6E /* My Hero_Ashiato Footprints.mp3 in Resources */,
 				69D5130229109C2F00F6BB6E /* JoJo_Josukes Theme.mp3 in Resources */,
-				69D513842911903300F6BB6E /* one_piece_font.ttf in Resources */,
 				69D513602910A04E00F6BB6E /* One Piece_The Very Very Very Strongest.mp3 in Resources */,
 				69D513732911843400F6BB6E /* Attack on Titan_Shinzou wo Sasageyo.mp3 in Resources */,
 				69D5133129109C2F00F6BB6E /* Mario_Ground Theme.mp3 in Resources */,
@@ -793,12 +789,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4TB8RV85JA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Music-Box-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -824,12 +822,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4TB8RV85JA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Music-Box-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

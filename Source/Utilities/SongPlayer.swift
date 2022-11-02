@@ -5,6 +5,7 @@
 //  Created by James Lockhart on 2022-10-30.
 //
 
+import MediaPlayer
 import AVFoundation
 import SwiftUI
 
@@ -14,23 +15,28 @@ class SongPlayer: NSObject, ObservableObject, AVAudioPlayerDelegate {
     
     @Published var songProgress = 0.0
     var nowPlaying: Song? = nil
-    
-    private var completion: (() -> Void)?
-    
+    var albums: [Album] = []
+        
     override init() {
         super.init()
         
         self.link = CADisplayLink(target: self, selector: #selector(update))
         link.add(to: .current, forMode: RunLoop.Mode.default)
+        
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+        } catch {
+            print(error)
+        }        
     }
     
     deinit {
         link.invalidate()
     }
 
-    func play(_ song: Song, completion: @escaping () -> Void) {
+    func play(_ song: Song) {
         stop()
-        self.completion = completion
 
         do {
             player = try AVAudioPlayer(contentsOf: song.fileUrl)
@@ -54,7 +60,6 @@ class SongPlayer: NSObject, ObservableObject, AVAudioPlayerDelegate {
         player?.stop()
         player = nil
         nowPlaying = nil
-        completion = nil
     }
     
     @objc func update() {
@@ -66,9 +71,25 @@ class SongPlayer: NSObject, ObservableObject, AVAudioPlayerDelegate {
         songProgress = player.currentTime / player.duration
     }
     
+    func toggle(song: Song) {
+        if nowPlaying == song {
+            stop()
+        } else {
+            play(song)
+        }
+    }
+    
     // MARK - AVAudioPlayerDelegate
     
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
-        completion?()
+        guard flag, let nextSong = nextSong() else { return }
+        
+        play(nextSong)
+    }
+    
+    private func nextSong() -> Song? {
+        guard let nowPlaying = nowPlaying else { return nil }
+        
+        return albums.next(after: nowPlaying)
     }
 }
